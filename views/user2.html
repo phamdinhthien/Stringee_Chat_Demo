@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css"
+    rel="stylesheet" />
+  <link href="../css/style.css" type="text/css" rel="stylesheet" />
+  <link href="../library/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <h3 class=" text-center">User 2</h3>
+    <div class="messaging">
+      <div class="inbox_msg">
+        <div class="inbox_people">
+          <div class="headind_srch">
+            <div class="recent_heading">
+              <select class="select_users">
+                <option value="" selected disabled hidden>Chọn user</option>
+                <option value="11">Phan Van A</option>
+              </select>
+              <div class="create_group_box ml-2">
+                <input type="checkbox" id="isGroup" value="true"> tạo nhóm<br>
+                <div class="set_name_and_create_group"  style="display: none;">
+                  <input type="text" class="name_group" placeholder="tên nhóm"/>
+                  <button class="create_group_btn">Tạo</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inbox_chat"></div>
+        </div>
+        <div class="mesgs">
+          <div class="mesgs_container">
+            <div class="msg_history"></div>
+            <div class="users_typing"></div>
+          </div>
+          <div class="type_msg">
+            <div class="input_msg_write">
+              <input type="text" class="write_msg" placeholder="Type a message" />
+              <input type="file" name="file_input" id="file_input">
+              <button class="msg_send_btn" type="button">
+                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../library/scripts/jquery-3.4.1.min.js"></script>
+  <script src="../library/scripts/popper.min.js"></script>
+  <script src="../library/scripts/bootstrap.min.js"></script>
+  <script src="../library/scripts/socket.io.js"></script>
+  <script src="../library/scripts/stringee_sdk.min.js"></script>
+  <script src="../scripts/common.js"></script>
+  <script src="../scripts/user_2.js"></script>
+</body>
+
+</html>
